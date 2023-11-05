@@ -1,0 +1,119 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4188,        111]
+NotebookOptionsPosition[      3692,         93]
+NotebookOutlinePosition[      4109,        110]
+CellTagsIndexPosition[      4066,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"ClearAll", "[", "m", "]"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "\:53c2\:6570parameters", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"8", "/", "10"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Qm", "=", 
+   RowBox[{"2", "/", "10"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Mu]", "=", "1000000"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"A", "=", 
+   RowBox[{
+    FractionBox["2", "Pi"], " ", "\[Mu]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"m", "[", "r_", "]"}], ":=", 
+   RowBox[{"1", "-", 
+    FractionBox[
+     SuperscriptBox["Qm", "2"], 
+     RowBox[{"2", "r"}]], "+", 
+    FractionBox[
+     RowBox[{"A", " ", 
+      SuperscriptBox["Qm", "4"]}], 
+     RowBox[{"40", 
+      SuperscriptBox["r", "5"]}]]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"horizon", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{"r", "/.", 
+    RowBox[{"NSolve", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["r", "2"], "-", 
+        RowBox[{"2", 
+         RowBox[{"m", "[", "r", "]"}], " ", "r"}], "+", " ", 
+        SuperscriptBox["a", "2"]}], "==", "0"}], ",", "r", ",", "Reals"}], 
+     "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.9068974380555925`*^9, 3.9068974389310617`*^9}, {
+   3.9069791643211145`*^9, 3.9069791650912523`*^9}, {3.9069829869298897`*^9, 
+   3.9069830041901026`*^9}, 3.9069886628786564`*^9, 3.906992607147401*^9, 
+   3.9070038034584637`*^9, 3.90700752561609*^9, {3.907010418049753*^9, 
+   3.9070104291226125`*^9}, {3.907364602365343*^9, 3.907364602617379*^9}, 
+   3.907405596702279*^9, {3.907445397262899*^9, 3.907445397487179*^9}, 
+   3.907445997297098*^9, {3.9074463949260364`*^9, 3.9074464029770217`*^9}, {
+   3.90744687576091*^9, 3.907446875917879*^9}, {3.9074475291947517`*^9, 
+   3.9074475383450036`*^9}, {3.90744782611279*^9, 3.907447826575118*^9}, {
+   3.9075104582539983`*^9, 3.9075104683191423`*^9}, 3.9075110696142826`*^9, {
+   3.9075114942768726`*^9, 3.90751150112381*^9}, {3.9075123061692395`*^9, 
+   3.907512312683554*^9}, {3.907513701349518*^9, 3.907513701783537*^9}, {
+   3.9075140843997784`*^9, 3.9075140910083976`*^9}, {3.907525063772575*^9, 
+   3.9075250681827064`*^9}, {3.90761460879311*^9, 3.9076146211122155`*^9}, {
+   3.9076983284887514`*^9, 3.907698333166395*^9}, {3.90778673984411*^9, 
+   3.9077867449200478`*^9}, {3.9078742952210937`*^9, 
+   3.9078742955234084`*^9}, {3.907962507455145*^9, 3.907962507759693*^9}, {
+   3.9080478344004583`*^9, 3.908047835146691*^9}, {3.908132822091862*^9, 
+   3.908132822491934*^9}, {3.908186450648041*^9, 3.9081864710144796`*^9}, {
+   3.9081865433629255`*^9, 3.908186554123437*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"a088c209-1bb4-48a1-ac81-c81c98d0be03"],
+
+Cell[BoxData["2.3805365856889713`"], "Output",
+ CellChangeTimes->{
+  3.9081864757096043`*^9, {3.9081865475143867`*^9, 3.9081865551699114`*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"0e00156d-ff11-4213-b005-4cfa91293a73"]
+}, Open  ]]
+},
+WindowSize->{1080, 658},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (2023\:5e747\:670824\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1764f84a-8c37-4218-8bbd-0dc8f8b8f2f2"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2871, 63, 272, "Input",ExpressionUUID->"a088c209-1bb4-48a1-ac81-c81c98d0be03"],
+Cell[3454, 87, 222, 3, 54, "Output",ExpressionUUID->"0e00156d-ff11-4213-b005-4cfa91293a73"]
+}, Open  ]]
+}
+]
+*)
+
